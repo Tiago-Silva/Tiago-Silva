@@ -3,28 +3,28 @@
 ## Sobre mim
 
 - 🌱 Estou sempre aprendendo e aprimorando minhas habilidades.
-- 💼 Trabalhando em projeto um projeto para Delivery.
-- 📍 Baseado em React js e react-native.
+- 💼 Trabalhando em um projeto para Delivery.
+- 📍 Baseado em java, React js e react-native.
 
 ## Tecnologias que eu uso
 
 <!-- Ícones de tecnologias. Você pode encontrar esses ícones em sites como https://simpleicons.org/ -->
-<p align="left">
-  <img src="https://simpleicons.org/icons/java.svg" alt="Java" height="30"/>
-  <img src="https://simpleicons.org/icons/spring.svg" alt="Spring Boot" height="30"/>
-  <img src="https://simpleicons.org/icons/react.svg" alt="React.js" height="30"/>
-  <img src="https://simpleicons.org/icons/react.svg" alt="React Native" height="30"/>
-  <img src="https://simpleicons.org/icons/nextdotjs.svg" alt="Next.js" height="30"/>
-  <img src="https://simpleicons.org/icons/typescript.svg" alt="TypeScript" height="30"/>
-  <img src="https://simpleicons.org/icons/html5.svg" alt="HTML5" height="30"/>
-  <img src="https://simpleicons.org/icons/css3.svg" alt="CSS3" height="30"/>
+<div style="display: inline_block"><br/>
+  <img align="center" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" height="30"/>
+  <img align="center" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React.js" height="30"/>
+  <img align="center" src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" height="30"/>
+  <img align="center" src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" alt="Styled-component" height="30"/>
+  <img align="center" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" height="30"/>
+  <img align="center" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" height="30"/>
+  <img align="center" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" height="30"/>
+  <img align="center" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" height="30"/>
   <!-- Adicione mais ícones de tecnologias que você utiliza -->
-</p>
+</div><br/>
 
 ## GitHub Stats
 
 <!-- Use o serviço https://github-readme-stats.vercel.app para gerar seu cartão de estatísticas do GitHub -->
-![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=Tiago-Silva&show_icons=true&count_private=true)
+![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=Tiago-Silva&show_icons=true&theme=dracula)
 
 ## Agradecimentos
 
