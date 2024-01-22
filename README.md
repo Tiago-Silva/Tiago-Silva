@@ -1,16 +1,31 @@
-### Hi there 👋
+# Olá, eu sou Tiago Silva 👋
 
-<!--
-**Tiago-Silva/Tiago-Silva** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Sobre mim
 
-Here are some ideas to get you started:
+- 🌱 Estou sempre aprendendo e aprimorando minhas habilidades.
+- 💼 Trabalhando em projeto um projeto para Delivery.
+- 📍 Baseado em React js e react-native.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Tecnologias que eu uso
+
+<!-- Ícones de tecnologias. Você pode encontrar esses ícones em sites como https://simpleicons.org/ -->
+<p align="left">
+  <img src="https://simpleicons.org/icons/java.svg" alt="Java" height="30"/>
+  <img src="https://simpleicons.org/icons/spring.svg" alt="Spring Boot" height="30"/>
+  <img src="https://simpleicons.org/icons/react.svg" alt="React.js" height="30"/>
+  <img src="https://simpleicons.org/icons/react.svg" alt="React Native" height="30"/>
+  <img src="https://simpleicons.org/icons/nextdotjs.svg" alt="Next.js" height="30"/>
+  <img src="https://simpleicons.org/icons/typescript.svg" alt="TypeScript" height="30"/>
+  <img src="https://simpleicons.org/icons/html5.svg" alt="HTML5" height="30"/>
+  <img src="https://simpleicons.org/icons/css3.svg" alt="CSS3" height="30"/>
+  <!-- Adicione mais ícones de tecnologias que você utiliza -->
+</p>
+
+## GitHub Stats
+
+<!-- Use o serviço https://github-readme-stats.vercel.app para gerar seu cartão de estatísticas do GitHub -->
+![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=Tiago-Silva&show_icons=true&count_private=true)
+
+## Agradecimentos
+
+Agradeço por visitar o meu perfil! 😊
