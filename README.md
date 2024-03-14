@@ -2,7 +2,11 @@
   <img src="https://camo.githubusercontent.com/2b3f2e955bb7466786aae615f7a3f5a43e57f92951f0fdf3708d18e19d116ff0/68747470733a2f2f63617073756c652d72656e6465722e76657263656c2e6170702f6170693f747970653d776176696e6726636f6c6f723d336635666131266865696768743d3132302673656374696f6e3d686561646572"
     height="auto" />
 </div>
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&random=false&width=435&lines=Ol%C3%A1+eu+sou+o+Tiago+Silva;Estudante+de+Engenharia+de+Software;Seja+muito+bem+vindo!!!)](https://git.io/typing-svg)
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&random=false&width=435&lines=Ol%C3%A1+eu+sou+o+Tiago+Silva;Estudante+de+Engenharia+de+Software;Seja+muito+bem+vindo!!!" alt="Typing SVG" />
+  </a>
+</div>
 
 ## Sobre mim
 - 💻 Portfolio - [https://portfolio-tiago-silva.vercel.app](https://portfolio-tiago-silva.vercel.app)
