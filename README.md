@@ -17,6 +17,11 @@
 ## Tecnologias que eu uso
 
 <!-- Ícones de tecnologias. Você pode encontrar esses ícones em sites como https://simpleicons.org/ -->
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,github,docker,linux,androidstudio,bitbucket,css,html,javascript,java,spring,mysql,nextjs,nodejs,npm,yarn,react,styledcomponents,tauri" />
+  </a>
+</p>
 <div style="display: inline_block"><br/>
   <img align="center" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" height="30"/>
   <img align="center" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React.js" height="30"/>
