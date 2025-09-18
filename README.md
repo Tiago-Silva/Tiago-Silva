@@ -12,16 +12,16 @@
 - 💻 Portfolio - [https://portfolio-tiago-silva.vercel.app](https://portfolio-tiago-silva.vercel.app)
 - 🌱 Estou sempre aprendendo e aprimorando minhas habilidades.
 - 💼 Trabalhando em um projeto para Delivery.
-- 📍 Baseado em java, React js e react-native.
+- 📍 Baseado em Java, React.js e React Native.
 
 ## Tecnologias que eu uso
 
-<!-- Ícones de tecnologias. Você pode encontrar esses ícones em sites como https://simpleicons.org/ -->
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=git,github,docker,linux,androidstudio,bitbucket,css,html,javascript,java,spring,mysql,nextjs,nodejs,npm,yarn,react,styledcomponents,tauri" />
   </a>
 </p>
+
 <div style="display: inline_block"><br/>
   <img align="center" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" height="30"/>
   <img align="center" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React.js" height="30"/>
@@ -31,16 +31,20 @@
   <img align="center" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" height="30"/>
   <img align="center" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" height="30"/>
   <img align="center" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" height="30"/>
-  <!-- Adicione mais ícones de tecnologias que você utiliza -->
 </div><br/>
 
 ## GitHub Stats
 
-<!-- Use o serviço https://github-readme-stats.vercel.app para gerar seu cartão de estatísticas do GitHub -->
-<!-- ![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=Tiago-Silva&show_icons=true&theme=dracula) -->
-http://github-profile-summary-cards.vercel.app/api/cards/stats?username={Tiago-Silva}&theme={dracula}
+<p align="center">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Tiago-Silva&theme=dracula" alt="Profile Details" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Tiago-Silva&theme=dracula" alt="Stats" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Tiago-Silva&theme=dracula&utcOffset=3" alt="Productive Time" />
+</p>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Tiago-Silva&theme=dracula)](https://github.com/Tiago-Silva/github-readme-stats)
+<p align="center">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Tiago-Silva&theme=dracula" alt="Repos per language" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Tiago-Silva&theme=dracula" alt="Most Commit Language" />
+</p>
 
 ## Agradecimentos
 
