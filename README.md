@@ -37,7 +37,8 @@
 ## GitHub Stats
 
 <!-- Use o serviço https://github-readme-stats.vercel.app para gerar seu cartão de estatísticas do GitHub -->
-![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=Tiago-Silva&show_icons=true&theme=dracula)
+<!-- ![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=Tiago-Silva&show_icons=true&theme=dracula) -->
+![Estatísticas do GitHub](http://github-profile-summary-cards.vercel.app/api/cards/stats?username={Tiago-Silva}&theme={dracula})
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Tiago-Silva&theme=dracula)](https://github.com/Tiago-Silva/github-readme-stats)
 
