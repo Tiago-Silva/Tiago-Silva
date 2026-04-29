@@ -36,14 +36,14 @@
 ## GitHub Stats
 
 <p align="center">
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Tiago-Silva&theme=dracula" alt="Profile Details" />
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Tiago-Silva&theme=dracula" alt="Stats" />
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Tiago-Silva&theme=dracula&utcOffset=3" alt="Productive Time" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Tiago-Silva&theme=dracula&cache_seconds=1800" alt="Profile Details" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Tiago-Silva&theme=dracula&cache_seconds=1800" alt="Stats" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Tiago-Silva&theme=dracula&utcOffset=-3&cache_seconds=1800" alt="Productive Time" />
 </p>
 
 <p align="center">
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Tiago-Silva&theme=dracula" alt="Repos per language" />
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Tiago-Silva&theme=dracula" alt="Most Commit Language" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Tiago-Silva&theme=dracula&cache_seconds=1800" alt="Repos per language" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Tiago-Silva&theme=dracula&cache_seconds=1800" alt="Most Commit Language" />
 </p>
 
 ## Agradecimentos
