@@ -149,7 +149,7 @@ O **Aura ERP** é uma iniciativa prática focada em resolver dores reais do com�
 
 ### 🤝 Conecte-se Comigo
 
-* 💼 **LinkedIn**: [tiagombts](https://www.linkedin.com/in/tiagombts/)
+* 💼 **LinkedIn**: [Tiago-Silva-Desenvolvedor](https://www.linkedin.com/in/tiagosilva-desenvolvedor)
 * 💻 **Meu Portfólio**: [Visite meu Portfólio](https://portfolio-tiago-silva.vercel.app)
 * 📧 **E-mail**: [tiago.mbts@gmail.com](mailto:tiago.mbts@gmail.com)
 
