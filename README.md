@@ -1,11 +1,11 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=1b1b3a&height=130&section=header&text=Tiago%20Silva&fontSize=42&fontColor=ffffff&animation=fadeIn" height="auto" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=1e1e2e&height=120&section=header&text=Tiago%20Silva&fontSize=38&fontColor=cdd6f4&animation=fadeIn" height="auto" />
 </div>
 
 <div align="center">
   <br/>
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2000&pause=1000&color=3ECF8E&center=true&vCenter=true&width=550&lines=Software+Engineer+Full-Stack;Criador+do+Ecossistema+Aura+ERP;Especialista+em+Integra%C3%A7%C3%B5es+%26+IoT;Focado+em+Sistemas+de+Alta+Performance" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2000&pause=1000&color=a6e3a1&center=true&vCenter=true&width=500&lines=Desenvolvedor+Full-Stack+(J%C3%BAnior);Estudante+de+Engenharia+de+Software;Focado+em+Solu%C3%A7%C3%B5es+Pr%C3%A1ticas+%26+IoT;Construindo+o+Ecossistema+Aura+ERP" alt="Typing SVG" />
   </a>
 </div>
 
@@ -13,84 +13,78 @@
 
 ### 👋 Sobre Mim
 
-Sou estudante de **Engenharia de Software** e desenvolvedor **Full-Stack** focado no desenvolvimento de sistemas web altamente robustos, aplicativos móveis e integrações seguras de baixo nível com hardware e IoT. 
+Olá! Sou estudante de **Engenharia de Software** e atuo como **Desenvolvedor Full-Stack (Júnior)**. Meu foco está em aprender e aplicar conceitos sólidos de arquitetura, desenvolvimento web moderno e integrações práticas de hardware/IoT. 
 
-Tenho paixão por desenhar arquiteturas limpas, performáticas e resilientes — preferindo sempre a manutenibilidade e a solidez técnica a atalhos rápidos de entrega.
+Minha filosofia de trabalho é baseada em ser transparente, **prometer menos e entregar mais**. Gosto de entender como as coisas funcionam por baixo do capô — seja lidando com segurança no banco de dados, criando pontes locais de comunicação com periféricos ou otimizando a sincronização offline de sistemas comerciais.
 
-- 💻 **Portfólio Pessoal**: [portfolio-tiago-silva.vercel.app](https://portfolio-tiago-silva.vercel.app)
-- 💼 **Trabalho Atual**: Construindo e evoluindo sistemas comerciais modulares e bridges de alta performance.
-- 🌱 **Foco de Estudos**: Arquitetura de Software Avançada, Engenharia de Sistemas com Rust e Segurança da Informação.
+- 💻 **Meu Portfólio**: [portfolio-tiago-silva.vercel.app](https://portfolio-tiago-silva.vercel.app)
+- 💼 **Foco Atual**: Estudos práticos aplicados em microsserviços locais e web, buscando constante melhoria de código limpo e padrões de mercado.
+- 🌱 **Aprendendo Sempre**: Arquitetura de software estruturada, boas práticas de testes, desenvolvimento nativo com Rust e segurança da informação básica.
 
 ---
 
 ### 🛡️ Nota de Privacidade & Engenharia (Recrutadores & Tech Leads)
 
-> [!IMPORTANT]
-> Os principais projetos que tenho desenvolvido recentemente fazem parte de um **ecossistema comercial privado (Aura ERP)**. Para respeitar a privacidade comercial do código-fonte e acordos de confidencialidade, mas ainda sim demonstrar minha capacidade técnica a **recrutadores e líderes de engenharia**, consolidei abaixo os estudos de caso, decisões de design de software e fluxos de arquitetura deste ecossistema.
+> [!NOTE]
+> **Sobre os projetos do Ecossistema Aura ERP:**
+> Os projetos destacados abaixo são sistemas comerciais sob desenvolvimento privado. Por questões de confidencialidade e ética com os clientes, o código-fonte original não é público. Contudo, para demonstrar minhas decisões de fluxo de dados, lógica de negócio e habilidades reais de resolução de problemas, descrevi de forma aberta a arquitetura geral e os desafios técnicos solucionados.
 
 ---
 
 ### 🌐 O Ecossistema Aura ERP
 
-O **Aura ERP** é uma suíte modular *SaaS multi-tenant* de alta escalabilidade. Seu principal diferencial de engenharia é a união de um **Core Cloud** resiliente com **Bridges Locais (Edge)** de alta velocidade que conversam diretamente com hardware e redes locais do cliente sem passar por intermediários centralizados na nuvem, garantindo latência próxima a zero e operação contínua.
+O **Aura ERP** é uma iniciativa prática focada em resolver dores reais do comércio. Trata-se de uma suíte de vendas que une um **Core Cloud** com **Bridges Locais (Edge)** que rodam na máquina do cliente. Isso permite falar direto com impressoras locais e gateways de mensageria com latência reduzida e alta resiliência.
 
-#### Diagrama de Arquitetura do Ecossistema
+#### Diagrama de Arquitetura de Integração (Estável)
 
-```mermaid
-graph TD
-    classDef cloud fill:#1e1b4b,stroke:#818cf8,stroke-width:2px,color:#fff;
-    classDef local fill:#1f2937,stroke:#3b82f6,stroke-width:2px,color:#fff;
-    classDef device fill:#111827,stroke:#10b981,stroke-width:2px,color:#fff;
-
-    %% Nodes
-    AuraDash["🛒 Aura Dash (Core SaaS - Cloud/Vite)"]:::cloud
-    SupabaseDB[("⚡ Supabase DB (RLS Multi-tenant)")]:::cloud
-    
-    AuraPrint["🌬️ Aura Print Bridge (Local Rust Service)"]:::local
-    AuraWeb["💬 Aura Web Bridge (Local Node.js WA Bridge)"]:::local
-    
-    ThermalPrinter["🖨️ Impressora Térmica (ESC/POS / A4)"]:::device
-    WhatsAppAPI["💬 WhatsApp Web Gateway (Baileys)"]:::device
-
-    %% Connections
-    AuraDash -->|TanStack Query| SupabaseDB
-    
-    AuraDash -->|Silent Print Call (HMAC-SHA256)| AuraPrint
-    AuraPrint -->|Nativo OS Spooler (WinSpool/CUPS)| ThermalPrinter
-    
-    AuraDash -->|Event Pull & Outbound (HMAC-SHA256)| AuraWeb
-    AuraWeb -->|Persistent Connection Spool| WhatsAppAPI
+```text
+┌─────────────────────────────────────────────────────────────────────────┐
+│                           AURA ERP ECOSYSTEM                            │
+│                       Arquitetura de Integração                         │
+└─────────────────────────────────────────────────────────────────────────┘
+                                     │
+                       [ 🛒 AURA DASH (Core Cloud) ]
+                         React / Vite / Supabase DB
+                                     │
+                ┌────────────────────┼────────────────────┐
+                │ (TanStack Query)   │ (HTTP HMAC-SHA256) │ (HTTP HMAC-SHA256)
+                ▼                    ▼                    ▼
+        [ ⚡ SUPABASE DB ]    [ 🌬️ AURA PRINT ]    [ 💬 AURA WEB ]
+         Multi-tenant RLS     Rust Axum local      Node Express local
+                                     │                    │
+                                     ▼                    ▼
+                             [ 🖨️ IMPRESSORA ]    [ 💬 WHATSAPP ]
+                              Térmica (ESC/POS)     Baileys Gateway
 ```
 
 ---
 
-### 📁 Estudos de Caso de Engenharia (Projetos Privados)
+### 📁 Estudos de Caso Práticos (Projetos Privados)
 
-Abaixo estão os detalhes arquiteturais dos três componentes principais do ecossistema:
-
-#### 1. 🛍️ Aura Dash — Core ERP & PDV SaaS
+#### 1. 🛍️ Aura Dash — Core ERP & PDV
 * **Stack**: `TypeScript 5.8`, `React 18.3`, `Vite`, `Tailwind CSS 3.4`, `Supabase (PostgreSQL)`, `shadcn/ui`, `TanStack Query`, `Dexie (IndexedDB)`.
-* **O Desafio**: Operações de Ponto de Venda (PDVs) em comércios físicos não podem parar de funcionar caso a internet caia. Adicionalmente, por se tratar de um modelo SaaS, o isolamento absoluto dos dados de cada empresa (*multi-tenancy*) na base de dados é um requisito crítico de compliance e segurança.
-* **A Solução de Engenharia**:
-  * **Operação Offline-First**: Implementação do **Dexie (IndexedDB)** como um banco de dados relacional local integrado no navegador, permitindo vendas completas offline com sincronização em background quando a rede é restabelecida.
-  * **Isolamento via RLS**: Configuração profunda de **Row-Level Security (RLS)** a nível de PostgreSQL no Supabase por meio de `company_id`. Mesmo que ocorram brechas ou bugs no frontend, o banco de dados rejeita qualquer requisição que não pertença ao tenant autenticado.
-  * **Arquitetura Domain-Driven (DDD)**: O frontend segue uma separação estrita em camadas: `domain/` (lógica pura e tipos de negócio), `modules/` (features auto-contidas como `pdv`, `estoque`, `financeiro`), `core/` (serviços transversais como auth e API) e `shared/` (UI reaproveitável).
+* **O Desafio**: Um Ponto de Venda (PDV) físico não pode parar a operação de vendas se a internet oscilar ou cair. Além disso, o sistema SaaS precisa garantir isolamento estrito de dados entre diferentes empresas inquilinas (*multi-tenancy*).
+* **Minha Abordagem Técnica**:
+  * **Módulos Auto-Contidos (DDD)**: Estruturei o código em domínios auto-contidos (`pdv`, `estoque`, `vendas`, `financial`, `crm`, `delivery`). No módulo de `pdv`, por exemplo, isolei a lógica e regras inegociáveis (*invariantes*) do Caixa, como impedir sessões simultâneas de caixa aberto para o mesmo operador e exigir fundo de abertura positivo.
+  * **Banco Local com IndexedDB**: Implementação do **Dexie (IndexedDB)** para salvar vendas localmente no navegador offline, realizando sincronização em segundo plano assim que a conexão retorna.
+  * **Isolamento via RLS**: Configuração de **Row-Level Security (RLS)** a nível de tabelas no Supabase via `company_id`. O próprio banco rejeita requisições ilegítimas, blindando os dados dos inquilinos mesmo contra eventuais falhas de frontend.
+  * **Consumo de Server State**: Uso sistemático do **TanStack Query** para gerenciar dados do servidor, tirando proveito de cache inteligente e evitando requisições manuais repetidas via hooks genéricos.
 
-#### 2. 🌬️ Aura Print Bridge — Impressão Silenciosa de Ultra Velocidade
+#### 2. 🌬️ Aura Print Bridge — Impressão Silenciosa
 * **Stack**: `Rust 🦀`, `Axum` (Tokio/Hyper), `WinSpool API` (Windows), `lp` (CUPS no Linux), `HMAC-SHA256`.
-* **O Desafio**: Navegadores rodam em sandboxes de segurança restritas e não possuem acesso de baixo nível ao hardware do computador. Abrir caixas de diálogo de impressão para o operador confirmar cada cupom térmico no PDV atrasa o atendimento e degrada a experiência do usuário.
-* **A Solução de Engenharia**:
-  * **Nativo & Extremamente Leve**: Desenvolvimento de um serviço nativo em **Rust** que roda em segundo plano consumindo menos de 10MB de RAM. O serviço recebe dados brutos do ERP e os envia diretamente ao spooler nativo de impressão do sistema operacional (`WinSpool` no Windows e `CUPS` no Linux) sem popups.
-  * **Handshake & Assinatura Criptográfica**: Proteção de endpoints sensíveis (como listar impressoras locais e enviar dados de impressão) usando chaves simétricas negociadas em handshake automatizado (`/pair`). Todas as requisições subsequentes exigem assinaturas criptográficas **HMAC-SHA256 (`x-signature`)** para impedir invasões locais.
-  * **Tray Application Self-Healing**: Uma aplicação de bandeja do Windows que monitora de forma ativa e resolve desvios (*drift*) de configuração de inicialização (*auto-start*) usando o **Task Scheduler** nativo do sistema operacional.
+* **O Desafio**: Navegadores rodam em ambientes seguros e isolados (*sandboxes*) e não possuem acesso direto a periféricos locais. Abrir a caixa de diálogo de impressão do navegador para cada cupom gerado no PDV deixa a operação do caixa lenta.
+* **Minha Abordagem Técnica**:
+  * **Binário Otimizado**: Desenvolvi um serviço local super leve em **Rust** (consumindo menos de 10MB de RAM) que recebe os dados do ERP e envia diretamente para o spooler nativo do sistema operacional (`WinSpool` / `lp`), possibilitando a impressão rápida e silenciosa.
+  * **Segurança Baseada em HMAC**: Proteção das APIs locais por meio de handshake automático de pareamento (`/pair`) e geração de assinaturas **HMAC-SHA256 (`x-signature`)** no cabeçalho das requisições, validando a autenticidade de quem envia a impressão.
+  * **Aplicação em Tray e Auto-Start**: Criação de menu de bandeja que verifica e corrige drifts de inicialização do serviço no logon usando o **Task Scheduler** nativo do Windows.
 
-#### 3. 💬 Aura Web Bridge — Integração WhatsApp Local & Fila Resiliente
+#### 3. 💬 Aura Web Bridge — Integração WhatsApp
 * **Stack**: `Node.js 23.x`, `Express`, `Baileys Library`, `HMAC-SHA256`, `useMultiFileAuthState`.
-* **O Desafio**: A comunicação do ERP com clientes via WhatsApp precisa ser resiliente a oscilações de rede. Além disso, disparos simultâneos não controlados podem levar ao banimento do número de telefone pela plataforma por spam.
-* **A Solução de Engenharia**:
-  * **Fila Durável Local (Spool)**: Criação de um mecanismo durável persistido no disco local com controle de vazão randômico (*randomized throttling* configurado entre 120ms e 350ms) para simular o comportamento humano e evitar banimentos do número de telefone.
-  * **Desacoplamento Inbound via Pull Event**: Implementação de um fluxo assíncrono onde o ERP faz *polling* periódico no Bridge local (`GET /api/new-messages`) para obter novos contatos recebidos, confirmando a entrega via fluxo de **ACK** (`POST /api/new-messages/ack`). Isso evita perda de mensagens mesmo se o ERP estiver inoperante.
-  * **Mitigação de Replay Attacks**: Validação de assinaturas HMAC em conjunto com cabeçalhos de timestamp (`x-bridge-timestamp`) e controle rígido contra *replay attacks* armazenando nonces descartáveis em um banco de TTL persistido localmente.
+* **O Desafio**: Enviar mensagens e comprovantes automáticos para clientes sem sobrecarregar a conexão local e respeitando taxas de envio razoáveis para evitar bloqueios de chip.
+* **Minha Abordagem Técnica**:
+  * **Fila Durável Local (Spool)**: Fila persistida no disco local com retentativa automática em falhas e controle de tempo randômico (*throttling* de 120ms-350ms) entre mensagens para simular o comportamento de envio humano.
+  * **Desacoplamento Inbound via Pull**: O Core ERP busca novas interações locais realizando *polling* assíncrono (`GET /api/new-messages`) e remove-as da fila local chamando a rota de **ACK**, garantindo estabilidade e evitando a perda de dados de clientes.
+  * **Proteção contra Replay**: Validação de tempo (*timestamp*) e controle de nonces persistidos localmente para impedir replay attacks nas APIs locais expostas.
 
 ---
 
@@ -100,63 +94,61 @@ Abaixo estão os detalhes arquiteturais dos três componentes principais do ecos
   <tr>
     <td valign="top" width="25%">
       <b>💻 Linguagens</b><br/><br/>
-      • Rust 🦀<br/>
-      • Java ☕<br/>
       • TypeScript<br/>
       • JavaScript<br/>
+      • Rust 🦀 (Básico/Prático)<br/>
+      • Java ☕<br/>
       • HTML5 & CSS3
     </td>
     <td valign="top" width="25%">
-      <b>🎨 Frontend & Mobile</b><br/><br/>
-      • React.js<br/>
-      • Next.js<br/>
-      • React Native<br/>
+      <b>🎨 Frontend & UI</b><br/><br/>
+      • React.js & Hooks<br/>
+      • Next.js (Estudos)<br/>
       • Tailwind CSS<br/>
-      • shadcn/ui & Radix<br/>
-      • Styled Components
+      • shadcn/ui & Radix UI<br/>
+      • Styled Components<br/>
+      • Layouts Responsivos
     </td>
     <td valign="top" width="25%">
       <b>⚡ Backend & Cloud</b><br/><br/>
       • Node.js & Express<br/>
-      • Axum (Rust)<br/>
+      • Axum (Rust / Básico)<br/>
       • Spring Boot (Java)<br/>
       • Supabase (PostgreSQL)<br/>
       • MySQL & SQLite<br/>
-      • TanStack Query
+      • TanStack Query (Server State)
     </td>
     <td valign="top" width="25%">
-      <b>⚙️ Integrações & DevOps</b><br/><br/>
-      • Tauri (Desktop)<br/>
-      • Docker<br/>
-      • Git & GitHub CI<br/>
-      • Linux OS<br/>
-      • OS Spooler (WinSpool / CUPS)<br/>
-      • Protocolo Baileys (WA)
+      <b>⚙️ Ferramentas & DevOps</b><br/><br/>
+      • Docker (Containers)<br/>
+      • Git & GitHub Flows<br/>
+      • Linux (Ubuntu/Debian)<br/>
+      • OS Spooler (WinSpool/CUPS)<br/>
+      • Protocolo Baileys (WA)<br/>
+      • Dexie (IndexedDB)
     </td>
   </tr>
 </table>
 
 ---
 
-### 📊 GitHub Stats
+### 📊 GitHub Stats (Atividade Real)
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Tiago-Silva&theme=dracula&cache_seconds=1800" alt="Profile Details" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Tiago-Silva&theme=dracula&cache_seconds=1800" alt="Stats" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Tiago-Silva&theme=dracula&utcOffset=-3&cache_seconds=1800" alt="Productive Time" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Tiago-Silva&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" alt="Estatísticas Gerais" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tiago-Silva&layout=compact&theme=dracula&hide=html,css,scss" alt="Linguagens mais Usadas" height="180" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Tiago-Silva&theme=dracula&cache_seconds=1800" alt="Repos per language" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Tiago-Silva&theme=dracula&cache_seconds=1800" alt="Most Commit Language" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Tiago-Silva&theme=dracula" alt="Streak de Commits" height="140" />
 </p>
 
 ---
 
 ### 🤝 Conecte-se Comigo
 
-* 💼 **LinkedIn**: [Conecte-se no LinkedIn](https://www.linkedin.com/in/tiagombts/) (Insira seu link personalizado)
+* 💼 **LinkedIn**: [tiagombts](https://www.linkedin.com/in/tiagombts/)
 * 💻 **Meu Portfólio**: [Visite meu Portfólio](https://portfolio-tiago-silva.vercel.app)
-* 📧 **E-mail**: [tiago.mbts@gmail.com](mailto:tiago.mbts@gmail.com) (Substitua se desejar)
+* 📧 **E-mail**: [tiago.mbts@gmail.com](mailto:tiago.mbts@gmail.com)
 
-Agradeço por visitar meu perfil! 😊 Fique à vontade para entrar em contato para oportunidades de engenharia de software complexa!
+Agradeço pela visita ao meu perfil! 😊 Estou sempre aberto a trocar ideias e em busca de oportunidades de crescimento como desenvolvedor júnior.
